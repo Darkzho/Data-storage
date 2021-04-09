@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+.background-image {
+    max-width: 375px;
+    position: relative;
+}
+
+.background-img {
+    background-image: url('../assets/bg-mobile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px 20px 20px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.header--logo img {
+    width: 140px;
+    height: 40px;
+}
+
+.interaction-section {
+  padding: 40px;
+  background-color: var(--Dark-Blue);
+  margin-top: 80px;
+  border-radius: 10px 85px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.interaction-section .action--files {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.action--files {
+  padding-top: 20px;
+}
+
+.action--files a {
+  background-color: var(--Very-Dark-Blue);
+  border-radius: 10px;
+}
+
+.action--files a:first-child{
+  padding: 14px;
+}
+
+.action--files a:nth-child(2){
+  padding: 15px 12px 14px 12px;
+}
+
+.action--files a:last-child{
+  padding: 16px 12px 13px 12px;
+}
+
+
+.action--files .item-1{
+  width: 22px;
+  height: 23px;
+}
+
+.action--files .item-2{
+  width: 25px;
+  height: 22px;
+}
+
+.action--files .item-3{
+  width: 23px;
+  height: 18px;
+  vertical-align: 3px;
+}
+
+.file-progress {
+  padding: 40px;
+  background-color: var(--Dark-Blue);
+  border-radius: 10px;
+}
+
+.file-progress h2 {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.file-progress span {
+  font-weight: 700;
+}
+
+.file-progress-input--container {
+  width: 255px;
+  height: 20px;
+  background-color: var(--Very-Dark-Blue);
+  display: flex;
+  border-radius: 15px;
+  padding: 2px;
+  align-items: center;
+  position: relative;
+}
+
+.file-progress-input--container .file-progress-input--white--circle{
+  background-color: white;
+  height:12px;
+  width: 12px;
+  border-radius: 10px;
+  Color: white;
+  position: absolute;
+  left: 178px;
+}
+
+.file-progress input {
+  height: 16px;
+  width: 190px;
+  border-radius: 15px;
+  padding: 5px 0 ;
+  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border: none;
+}
+
+.file-progress .file-progress--range{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 10px 0 20px;
+  font-size: 1.4rem;
+}
+
+.file-progress--info--container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  }
+
+.file-progress--info {
+  display: flex;
+  align-items: center;
+}
+
+.file-progress .file-progress--info{
+  background-color: white;
+  position: absolute;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  color: var(--Grayish-Blue);
+  font-weight: 700;
+}
+
+.file-progress--info--container .file-progress--info span{
+  font-size: 4.5rem;
+  color: var(--Very-Dark-Blue);
+  margin-right: 10px;
+}
